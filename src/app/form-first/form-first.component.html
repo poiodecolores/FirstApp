@@ -1,0 +1,12 @@
+<h2 class="titulo">Hola soy form first</h2>
+<p>Name</p>
+<input type="text" name="" [value]="defaultName">
+<p>Email</p>
+<input #email type="text" >
+<hr>
+<button (click)="onSendForm()">Send Form</button>
+<button (click)="ondefaultForm(email.value)">Default form</button>
+
+<p>{{status}}</p>
+
+<img [src]="itemImageUrl" alt="item">
